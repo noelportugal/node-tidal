@@ -23,8 +23,11 @@ export type Methods = 'GET' | 'POST' | 'DELETE' | 'PUT' | 'PATCH';
 export type Versions = 'v1' | 'v2';
 
 export interface ClientOptions {
-  token: string;
-  countryCode: Country;
+  accessToken?: string;
+  refreshToken?: string;
+  countryCode?: Country;
+  clientId?: string;
+  clientSecret?: string;
 }
 
 export interface RequestOptions {

@@ -7,10 +7,7 @@ describe('search', () => {
   let tidal: Tidal;
 
   before(() => {
-    tidal = new Tidal({
-      token: process.env.TIDAL_TOKEN!,
-      countryCode: 'BE',
-    });
+    tidal = new Tidal();
   });
 
   describe('tracks', () => {
